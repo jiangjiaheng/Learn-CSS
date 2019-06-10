@@ -2,32 +2,41 @@
   <div id="app">
     <el-container>
       <el-header>
-        <my-header></my-header>
+        <my-nav></my-nav>
       </el-header>
       <el-main>
-        <router-view/>
+        <router-view class="view"/>
       </el-main>
     </el-container>
   </div>
 </template>
 
 <script>
-import MyHeader from './layout/MyHeader.vue';
+import myNav from './layout/myNav.vue';
 
 export default {
   name: 'app',
   components: {
-    MyHeader,
+    myNav,
   },
 };
 </script>
 
 <style>
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.el-header{
+  padding: 0 !important;
 }
 </style>

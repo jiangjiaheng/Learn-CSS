@@ -1,40 +1,16 @@
 // page list config
-import Home from '@/pages/Home'
-import Information from '@/pages/Information'
-import About from '@/pages/About'
-import Setting from '@/pages/Setting'
-import Other from '@/pages/Other'
+import Element from '@/pages/selector/element'
 
 const pageList = {
-    home: {
-        title: '首页',
-        name: 'home',
-        component: Home
-    },
-    information: {
-        title: '详情',
-        name: 'information',
-        component: Information
-    },
-    about: {
-        title: '关于',
-        name: 'about',
-        component: About
-    },
-    more: {
-        title: '更多',
-        name: 'more',
+    selector: {
+        title: '选择器篇',
+        name: 'selector',
         subpages: {
-            setting: {
-                title: '设置',
-                name: 'setting',
-                component: Setting
-            },
-            other: {
-                title: '其他',
-                name: 'other',
-                component: Other
-            },
+            element: {
+                title: '元素选择器',
+                name: 'element',
+                component: Element
+            }
         }
     }
 };

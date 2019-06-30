@@ -1,6 +1,6 @@
 <template>
-   <div class="info">
-       <h1>This is information page.</h1>
+   <div class="">
+       this is element selector
    </div>
 </template>
 

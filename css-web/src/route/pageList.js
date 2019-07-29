@@ -1,5 +1,6 @@
 // page list config
-import Element from '@/pages/selector/element'
+import element from '@/pages/selector/element'
+import position from '@/pages/layout/position'
 
 const pageList = {
     selector: {
@@ -9,7 +10,18 @@ const pageList = {
             element: {
                 title: '元素选择器',
                 name: 'element',
-                component: Element
+                component: element
+            }
+        }
+    },
+    layout: {
+        title: '定位布局篇',
+        name: 'layout',
+        subpages: {
+            position: {
+                title: '定位',
+                name: 'position',
+                component: position
             }
         }
     }

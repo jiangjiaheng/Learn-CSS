@@ -1,5 +1,7 @@
 // page list config
 import element from '@/pages/selector/element'
+import relation from '@/pages/selector/relation'
+import attribute from '@/pages/selector/attribute'
 import position from '@/pages/layout/position'
 
 const pageList = {
@@ -11,6 +13,16 @@ const pageList = {
                 title: '元素选择器',
                 name: 'element',
                 component: element
+            },
+            relation: {
+                title: '关系选择器',
+                name: 'relation',
+                component: relation
+            },
+            attribute: {
+                title: '属性选择器',
+                name: 'attribute',
+                component: attribute
             }
         }
     },

@@ -2,6 +2,8 @@
 import element from '@/pages/selector/element'
 import relation from '@/pages/selector/relation'
 import attribute from '@/pages/selector/attribute'
+import pseudoClasses from '@/pages/selector/pseudoClasses'
+import pseudoElement from '@/pages/selector/pseudoElement'
 import position from '@/pages/layout/position'
 
 const pageList = {
@@ -23,6 +25,16 @@ const pageList = {
                 title: '属性选择器',
                 name: 'attribute',
                 component: attribute
+            },
+            pseudoClasses: {
+                title: '伪类选择器',
+                name: 'pseudoClasses',
+                component: pseudoClasses
+            },
+            pseudoElement: {
+                title: '伪对象选择器',
+                name: 'pseudoElement',
+                component: pseudoElement
             }
         }
     },

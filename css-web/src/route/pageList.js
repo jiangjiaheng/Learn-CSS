@@ -5,6 +5,7 @@ import attribute from '@/pages/selector/attribute'
 import pseudoClasses from '@/pages/selector/pseudoClasses'
 import pseudoElement from '@/pages/selector/pseudoElement'
 import position from '@/pages/layout/position'
+import layout from '@/pages/layout/layout'
 
 const pageList = {
     selector: {
@@ -46,6 +47,11 @@ const pageList = {
                 title: '定位',
                 name: 'position',
                 component: position
+            },
+            layout: {
+                title: '布局',
+                name: 'layout',
+                component: layout
             }
         }
     }

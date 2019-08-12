@@ -6,6 +6,8 @@ import pseudoClasses from '@/pages/selector/pseudoClasses'
 import pseudoElement from '@/pages/selector/pseudoElement'
 import position from '@/pages/layout/position'
 import layout from '@/pages/layout/layout'
+import flexContainer from '@/pages/flexbox/flexContainer'
+import flexItem from '@/pages/flexbox/flexItem'
 
 const pageList = {
     selector: {
@@ -54,7 +56,23 @@ const pageList = {
                 component: layout
             }
         }
-    }
+    },
+    flexbox: {
+        title: '弹性盒子篇',
+        name: 'flexbox',
+        subpages: {
+            flexContainer: {
+                title: '盒子容器',
+                name: 'flexContainer',
+                component: flexContainer
+            },
+            flexItem: {
+                title: '盒子项目',
+                name: 'flexItem',
+                component: flexItem
+            }
+        }
+    },
 };
 
 export default pageList;

@@ -8,6 +8,7 @@ import position from '@/pages/layout/position'
 import layout from '@/pages/layout/layout'
 import flexContainer from '@/pages/flexbox/flexContainer'
 import flexItem from '@/pages/flexbox/flexItem'
+import diceLayout from '@/pages/flexbox/diceLayout'
 
 const pageList = {
     selector: {
@@ -70,6 +71,11 @@ const pageList = {
                 title: '盒子项目',
                 name: 'flexItem',
                 component: flexItem
+            },
+            diceLayout: {
+                title: '骰子的布局',
+                name: 'diceLayout',
+                component: diceLayout
             }
         }
     },

@@ -15,6 +15,10 @@ import input from '@/pages/flexbox/input'
 import pend from '@/pages/flexbox/pend'
 import fixedEnd from '@/pages/flexbox/fixedEnd'
 import waterFlow from '@/pages/flexbox/waterFlow'
+import transition from '@/pages/transition/transition'
+import animation from '@/pages/transition/animation'
+import transform from '@/pages/transform/transform'
+import threeD from '@/pages/transform/threeD'
 
 const pageList = {
     selector: {
@@ -115,6 +119,38 @@ const pageList = {
             }
         }
     },
+    transitionAnimation: {
+        title: '过渡动画篇',
+        name: 'transitionAnimation',
+        subpages: {
+            transition: {
+                title: '过渡',
+                name: 'transition',
+                component: transition
+            },
+            animation: {
+                title: '动画',
+                name: 'animation',
+                component: animation
+            }
+        }
+    },
+    transformThreeD: {
+        title: '变换3D篇',
+        name: 'transformThreeD',
+        subpages: {
+            transform: {
+                title: '变换',
+                name: 'transform',
+                component: transform
+            },
+            threeD: {
+                title: '3D',
+                name: 'threeD',
+                component: threeD
+            }
+        }
+    }
 };
 
 export default pageList;

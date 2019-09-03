@@ -19,6 +19,9 @@ import transition from '@/pages/transition/transition'
 import animation from '@/pages/transition/animation'
 import transform from '@/pages/transform/transform'
 import threeD from '@/pages/transform/threeD'
+import width from '@/pages/dimension/width'
+import padding from '@/pages/dimension/padding'
+import margin from '@/pages/dimension/margin'
 
 const pageList = {
     selector: {
@@ -65,6 +68,27 @@ const pageList = {
                 title: '布局',
                 name: 'layout',
                 component: layout
+            }
+        }
+    },
+    Dimension: {
+        title: '尺寸边距篇',
+        name: ' Dimension',
+        subpages: {
+            width: {
+                title: '尺寸',
+                name: 'width',
+                component: width
+            },
+            padding: {
+                title: '内边距',
+                name: 'padding',
+                component: padding
+            },
+            margin: {
+                title: '外边距',
+                name: 'margin',
+                component: margin
             }
         }
     },

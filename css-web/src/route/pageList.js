@@ -22,6 +22,9 @@ import threeD from '@/pages/transform/threeD'
 import width from '@/pages/dimension/width'
 import padding from '@/pages/dimension/padding'
 import margin from '@/pages/dimension/margin'
+import background from '@/pages/backgrounds/background'
+import border from '@/pages/backgrounds/border'
+import color from '@/pages/backgrounds/color'
 
 const pageList = {
     selector: {
@@ -73,7 +76,7 @@ const pageList = {
     },
     Dimension: {
         title: '尺寸边距篇',
-        name: ' Dimension',
+        name: 'Dimension',
         subpages: {
             width: {
                 title: '尺寸',
@@ -89,6 +92,27 @@ const pageList = {
                 title: '外边距',
                 name: 'margin',
                 component: margin
+            }
+        }
+    },
+    Backgrounds: {
+        title: '背景边框篇',
+        name: 'Backgrounds',
+        subpages: {
+            background: {
+                title: '背景',
+                name: 'background',
+                component: background
+            },
+            border: {
+                title: '边框',
+                name: 'border',
+                component: border
+            },
+            color: {
+                title: '颜色',
+                name: 'color',
+                component: color
             }
         }
     },

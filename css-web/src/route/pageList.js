@@ -25,6 +25,9 @@ import margin from '@/pages/dimension/margin'
 import background from '@/pages/backgrounds/background'
 import border from '@/pages/backgrounds/border'
 import color from '@/pages/backgrounds/color'
+import font from '@/pages/font/font'
+import text from '@/pages/font/text'
+import write from '@/pages/font/write'
 
 const pageList = {
     selector: {
@@ -92,6 +95,27 @@ const pageList = {
                 title: '外边距',
                 name: 'margin',
                 component: margin
+            }
+        }
+    },
+    Fonts: {
+        title: '文字文本篇',
+        name: 'Fonts',
+        subpages: {
+            font: {
+                title: '文字',
+                name: 'font',
+                component: font
+            },
+            text: {
+                title: '文本',
+                name: 'text',
+                component: text
+            },
+            write: {
+                title: '书写',
+                name: 'write',
+                component: write
             }
         }
     },

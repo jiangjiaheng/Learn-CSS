@@ -28,6 +28,8 @@ import color from '@/pages/backgrounds/color'
 import font from '@/pages/font/font'
 import text from '@/pages/font/text'
 import write from '@/pages/font/write'
+import table from '@/pages/tableList/table'
+import list from '@/pages/tableList/list'
 
 const pageList = {
     selector: {
@@ -137,6 +139,22 @@ const pageList = {
                 title: '颜色',
                 name: 'color',
                 component: color
+            }
+        }
+    },
+    tableList:{
+        title:'列表表格篇',
+        name:'tableList',
+        subpages:{
+            list:{
+                title:'列表',
+                name:'list',
+                component:list
+            },
+            table:{
+                title:'表格',
+                name:'table',
+                component:table
             }
         }
     },

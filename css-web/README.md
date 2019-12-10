@@ -1,4 +1,4 @@
-# web-template
+# css-web
 
 ## Project setup
 ```

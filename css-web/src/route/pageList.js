@@ -30,6 +30,9 @@ import text from '@/pages/font/text'
 import write from '@/pages/font/write'
 import table from '@/pages/tableList/table'
 import list from '@/pages/tableList/list'
+import content from '@/pages/ui/content'
+import column from '@/pages/ui/column'
+import interfaces from '@/pages/ui/interface'
 
 const pageList = {
     selector: {
@@ -142,19 +145,40 @@ const pageList = {
             }
         }
     },
-    tableList:{
-        title:'列表表格篇',
-        name:'tableList',
-        subpages:{
-            list:{
-                title:'列表',
-                name:'list',
-                component:list
+    tableList: {
+        title: '列表表格篇',
+        name: 'tableList',
+        subpages: {
+            list: {
+                title: '列表',
+                name: 'list',
+                component: list
             },
-            table:{
-                title:'表格',
-                name:'table',
-                component:table
+            table: {
+                title: '表格',
+                name: 'table',
+                component: table
+            }
+        }
+    },
+    ui: {
+        title: '用户界面',
+        name: 'ui',
+        subpages: {
+            content: {
+                title: '内容',
+                name: 'content',
+                component: content
+            },
+            interfaces: {
+                title: '界面',
+                name: 'interfaces',
+                component: interfaces
+            },
+            column: {
+                title: '多列',
+                name: 'column',
+                component: column
             }
         }
     },
